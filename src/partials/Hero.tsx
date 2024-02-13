@@ -1,63 +1,49 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { GradientText, HeroAvatar, HeroSocial, Section } from '@/components';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hey, I'm <GradientText>Daniel</GradientText>
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          Striving to use <GradientText>tech</GradientText> for good, making the
+          world better for all. Let's code with{' '}
+          <GradientText>purpose</GradientText>, design with{' '}
+          <GradientText>empathy</GradientText>, and ensure our{' '}
+          <GradientText>innovations</GradientText> leave a valuable{' '}
+          <GradientText>legacy</GradientText> on society.
         </>
       }
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          src="/assets/images/code-icon.svg"
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
+          <a href="https://www.linkedin.com/in/od-gonzalez/">
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
             />
           </a>
-          <a href="/">
+          <a href="https://twitter.com/odagora">
             <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
+              src="/assets/images/twitter-icon.png"
+              alt="Twitter icon"
+            />
+          </a>
+          <a href="https://github.com/odagora">
+            <HeroSocial
+              src="/assets/images/github-icon.png"
+              alt="Github icon"
             />
           </a>
         </>
