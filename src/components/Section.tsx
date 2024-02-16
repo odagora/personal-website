@@ -1,7 +1,7 @@
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren, ReactNode } from 'react';
 
 interface ISectionProps extends PropsWithChildren {
-  title?: string;
+  title?: ReactNode;
 }
 
 export const Section = (props: ISectionProps) => (
