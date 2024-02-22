@@ -1,0 +1,57 @@
+---
+import type { MarkdownInstance } from 'astro';
+
+import { NewerOlderPagination, PaginationHeader, Section } from '@/components';
+import { ProjectList } from '@/partials';
+import { CTA } from '@/partials/CTA';
+import Base from '@/templates/Base.astro';
+import type {
+  IProjectFrontmatter,
+  ProjectFrontmatterPage,
+} from '@/types/IProjectFrontMatter';
+import { AppConfig, sortByDate } from '@/utils';
+
+type GetStaticPaths = {
+  paginate: any;
+}; // Overrides `GetStaticPathsOptions` types from Astro
+
+interface Props {
+  page: ProjectFrontmatterPage;
+}
+
+export async function getStaticPaths({ paginate }: GetStaticPaths) {
+  const allProjects = await Astro.glob<IProjectFrontmatter>('./*.md');
+  const sortedProjects: MarkdownInstance<IProjectFrontmatter>[] =
+    sortByDate(allProjects);
+
+  // Return a paginated collection of paths for all posts
+  return paginate(sortedProjects, { pageSize: 2 });
+}
+
+const { page } = Astro.props as Props;
+
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const titleBase = `Project page ${page.data}`;
+const title = titleBase + titleSuffix;
+const description =
+  'Pagination example built with Astro styled with Tailwind CSS.';
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <PaginationHeader
+      title='Projects'
+      description='A list of projects I have worked on and I am working on'
+    />
+  </Section>
+
+  <Section>
+    <ProjectList projects={page.data} />
+  </Section>
+
+  <Section>
+    <NewerOlderPagination page={page} resource='Projects' />
+  </Section>
+
+  <CTA />
+</Base>

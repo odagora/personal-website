@@ -34,8 +34,8 @@ const Header = () => (
 
       <NavMenu>
         <NavMenuItem href="/posts/">Posts</NavMenuItem>
-        <NavMenuItem href="/projects">Projects</NavMenuItem>
-        <NavMenuItem href="/contact">Contact</NavMenuItem>
+        <NavMenuItem href="/projects/">Projects</NavMenuItem>
+        <NavMenuItem href="/contact/">Contact</NavMenuItem>
       </NavMenu>
     </NavbarTwoColumns>
   </HeaderWrapper>
