@@ -1,3 +1,4 @@
+import { AboutDetails } from './AboutDetails';
 import { BlogPost } from './BlogPost';
 import { CTA } from './CTA';
 import { Footer } from './Footer';
@@ -9,6 +10,7 @@ import { RecentPosts } from './RecentPosts';
 import { RecentProjects } from './RecentProjects';
 
 export {
+  AboutDetails,
   BlogPost,
   CTA,
   Footer,

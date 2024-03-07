@@ -1,5 +1,23 @@
 import { ColorTags } from '@/components/Tags';
 
+export const socialData = [
+  {
+    name: 'LinkedIn',
+    image: 'linkedin-icon.png',
+    link: 'https://www.linkedin.com/in/od-gonzalez/',
+  },
+  {
+    name: 'Twitter',
+    image: 'twitter-icon.png',
+    link: 'https://twitter.com/odagora',
+  },
+  {
+    name: 'GitHub',
+    image: 'github-icon.png',
+    link: 'https://github.com/odagora',
+  },
+];
+
 export const technologies = {
   // Frontend
   HTML: 'HTML',

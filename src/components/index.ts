@@ -1,3 +1,6 @@
+import { AboutDetails } from '../partials/AboutDetails';
+import { AboutContent } from './AboutContent';
+import { AboutHeader } from './AboutHeader';
 import { BlogCard } from './BlogCard';
 import { BlogGallery } from './BlogGallery';
 import { FooterCopyright } from './FooterCopyright';
@@ -14,9 +17,13 @@ import { Project } from './Project';
 import { ProjectContent } from './ProjectContent';
 import { ProjectHeader } from './ProjectHeader';
 import { Section } from './Section';
+import { SocialButtons } from './SocialButtons';
 import { ColorTags, Tags } from './Tags';
 
 export {
+  AboutContent,
+  AboutDetails,
+  AboutHeader,
   BlogCard,
   BlogGallery,
   ColorTags,
@@ -34,5 +41,6 @@ export {
   ProjectContent,
   ProjectHeader,
   Section,
+  SocialButtons,
   Tags,
 };
