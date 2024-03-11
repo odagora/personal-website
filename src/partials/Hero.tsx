@@ -1,4 +1,5 @@
-import { GradientText, HeroAvatar, HeroSocial, Section } from '@/components';
+import { GradientText, HeroAvatar, Section, SocialButtons } from '@/components';
+import { socialData } from '@/constants';
 
 const Hero = () => (
   <Section>
@@ -26,28 +27,7 @@ const Hero = () => (
           loading="lazy"
         />
       }
-      socialButtons={
-        <>
-          <a href="https://www.linkedin.com/in/od-gonzalez/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="https://twitter.com/odagora">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="https://github.com/odagora">
-            <HeroSocial
-              src="/assets/images/github-icon.png"
-              alt="Github icon"
-            />
-          </a>
-        </>
-      }
+      socialButtons={<SocialButtons data={socialData} />}
     />
   </Section>
 );

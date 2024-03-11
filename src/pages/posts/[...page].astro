@@ -1,17 +1,17 @@
 ---
-import type {
-  FrontmatterPage,
-  IFrontmatter,
-} from 'astro-boilerplate-components';
 import {
   BlogGallery,
   NewerOlderPagination,
   PaginationHeader,
   Section,
-} from 'astro-boilerplate-components';
-
+} from '@/components';
 import { CTA } from '@/partials/CTA';
 import Base from '@/templates/Base.astro';
+import type { MarkdownInstance } from '@/types';
+import type {
+  BlogFrontmatterPage,
+  IBlogFrontmatter,
+} from '@/types/IBlogFrontMatter';
 import { AppConfig } from '@/utils/AppConfig';
 import { sortByDate } from '@/utils/Posts';
 
@@ -20,15 +20,16 @@ type GetStaticPaths = {
 }; // Overrides `GetStaticPathsOptions` types from Astro
 
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
-  const allPosts = await Astro.glob<IFrontmatter>('./*.md');
-  const sortedPosts = sortByDate(allPosts);
+  const allPosts = await Astro.glob<IBlogFrontmatter>('./*.md');
+  const sortedPosts: MarkdownInstance<IBlogFrontmatter>[] =
+    sortByDate(allPosts);
 
   // Return a paginated collection of paths for all posts
   return paginate(sortedPosts, { pageSize: 6 });
 }
 
 interface Props {
-  page: FrontmatterPage;
+  page: BlogFrontmatterPage;
 }
 
 const { page } = Astro.props as Props;
@@ -52,7 +53,7 @@ const description =
   </Section>
 
   <Section>
-    <NewerOlderPagination page={page} />
+    <NewerOlderPagination page={page} resource='Posts' />
   </Section>
 
   <CTA />
