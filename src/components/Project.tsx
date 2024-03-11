@@ -37,7 +37,9 @@ export const Project = (props: IProjectProps) => {
           </a>
           <div className="ml-3 flex flex-wrap gap-2">
             {props.instance.frontmatter.tags.map((tag) => (
-              <Tags color={getColorTag(tag)}>{tag}</Tags>
+              <Tags key={tag} color={getColorTag(tag)}>
+                {tag}
+              </Tags>
             ))}
           </div>
         </div>
