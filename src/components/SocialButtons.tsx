@@ -1,4 +1,4 @@
-import { HeroSocial } from 'astro-boilerplate-components';
+import { HeroSocial } from '@/components';
 
 type SocialButton = {
   name: string;

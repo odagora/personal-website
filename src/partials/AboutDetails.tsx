@@ -1,9 +1,10 @@
-import { GradientText } from 'astro-boilerplate-components';
-
-import { SocialButtons } from '@/components';
-import { AboutContent } from '@/components/AboutContent';
-import { AboutHeader } from '@/components/AboutHeader';
-import { Section } from '@/components/Section';
+import {
+  AboutContent,
+  AboutHeader,
+  GradientText,
+  Section,
+  SocialButtons,
+} from '@/components';
 import { socialData } from '@/constants';
 
 export const AboutDetails = () => (
