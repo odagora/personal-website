@@ -3,7 +3,6 @@ import type { MarkdownInstance } from 'astro';
 
 import { NewerOlderPagination, PaginationHeader, Section } from '@/components';
 import { ProjectList } from '@/partials';
-import { CTA } from '@/partials/CTA';
 import Base from '@/templates/Base.astro';
 import type {
   IProjectFrontmatter,
@@ -44,14 +43,10 @@ const description =
       description='A list of projects I have worked on and I am working on'
     />
   </Section>
-
   <Section>
     <ProjectList projects={page.data} />
   </Section>
-
   <Section>
     <NewerOlderPagination page={page} resource='Projects' />
   </Section>
-
-  <CTA />
 </Base>

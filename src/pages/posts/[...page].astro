@@ -5,7 +5,6 @@ import {
   PaginationHeader,
   Section,
 } from '@/components';
-import { CTA } from '@/partials/CTA';
 import Base from '@/templates/Base.astro';
 import type { MarkdownInstance } from '@/types';
 import type {
@@ -43,18 +42,14 @@ const description =
 <Base head={{ title, description }}>
   <Section>
     <PaginationHeader
-      title='Random title here'
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+      title='Blog posts'
+      description='A list of my latest blog posts covering various tech categories'
     />
   </Section>
-
   <Section>
     <BlogGallery postList={page.data} />
   </Section>
-
   <Section>
     <NewerOlderPagination page={page} resource='Posts' />
   </Section>
-
-  <CTA />
 </Base>

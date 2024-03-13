@@ -1,6 +1,5 @@
 ---
 import { RecentProjects } from '@/partials';
-import { CTA } from '@/partials/CTA';
 import { Hero } from '@/partials/Hero';
 import { RecentPosts } from '@/partials/RecentPosts';
 import Base from '@/templates/Base.astro';
@@ -25,5 +24,4 @@ const { description } = AppConfig;
   <Hero />
   <RecentProjects projects={lastTwoProjects} />
   <RecentPosts postList={lastThreePosts} />
-  <CTA />
 </Base>
