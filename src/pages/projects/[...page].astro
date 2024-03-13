@@ -30,7 +30,7 @@ export async function getStaticPaths({ paginate }: GetStaticPaths) {
 const { page } = Astro.props as Props;
 
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Project page ${page.data}`;
+const titleBase = `Project page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
 const description =
   'Pagination example built with Astro styled with Tailwind CSS.';
