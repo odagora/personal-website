@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Testing an Ecommerce Web Component using Cypress
-description: ¿How to perform e2e testing for a vanilla JavaScript Web Component using Cypress?. Let's find out in this three out of three blog posts series.
+description: Learn integration testing for JavaScript Web Components with Cypress in our final series post. Click to explore!
 pubDate: 2024-02-23T00:00:00Z
 imgSrc: '/assets/images/technology-design-illustration.jpg'
 imgAlt: 'ecommerce image'
@@ -63,7 +63,7 @@ Now that we have a better understanding of the app, we can easily comprehend the
 </details>
 
 ### Step 3: One Item in Cart Interaction Testing Setup
-**Each test** begins with defining the constants values, finding the `price text` and the `button` of the first `ProductItem` in the `Menu` component and then clicking on it:
+**Each test** begins with defining the constants values, finding the `price` text and the `button` of the first `ProductItem` in the `Menu` component and then clicking on it:
 
 ```js
 let itemPrice;
@@ -122,7 +122,7 @@ describe('Add item to cart', () => {
   })
 })
 ```
-The second test suite cover **increasing and decreasing an item's quantity** within the `Cart`, verifying that the `Cart` updates to reflect these changes accurately.
+The second test suite cover **increasing and decreasing an item's quantity** within the `Cart`, verifying that the `Cart` updates to reflect these changes accurately:
 ```js
 describe('Update item in cart', () => {
   it('should increase item quantity and cart total values', () => {

@@ -12,7 +12,7 @@ export const AboutDetails = () => (
     <AboutHeader
       title={
         <>
-          Hey, I'm <GradientText>Daniel González</GradientText>
+          Hey there, I'm <GradientText>Daniel González</GradientText>
         </>
       }
     />
@@ -63,9 +63,8 @@ export const AboutDetails = () => (
             time. In 2017, I made a transition to Fullstack web development,
             where I built an asset management app for the automotive industry
             and customized a <GradientText>WordPress</GradientText> website
-            through plugins and open-source
-            <GradientText>CRM</GradientText> integrations using
-            <GradientText>PHP</GradientText>,{' '}
+            through plugins and open-source <GradientText>CRM</GradientText>{' '}
+            integrations using <GradientText>PHP</GradientText>,{' '}
             <GradientText>Laravel</GradientText>, and{' '}
             <GradientText>Bootstrap</GradientText>. Over the past few years,
             I’ve primarily focused on frontend development within the{' '}

@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Testing an Ecommerce Web Component using Jest
-description: ¿How to perform unit testing for a vanilla JavaScript Web Component using Jest?. Let's find out in this two out of three blog posts series.
+description: Explore unit testing for JavaScript Web Components with Jest in the second post of our three-part series. Join us now!
 pubDate: 2024-01-15T00:00:00Z
 imgSrc: '/assets/images/quality-control-engineers-illustration.jpg'
 imgAlt: 'ecommerce image'
@@ -57,7 +57,7 @@ Since we are working with a Vanilla JavaScript project, we need to perform some 
     }
     ```
 ### Step 2: Test Suite General Setup
-  **Each test** begins with creating a new instance of the `CartItem` component and appending it to the `document` body. **After the test**, any mocks are reset, and the component is removed to ensure a clean state for subsequent tests.
+  **Each test** begins with creating a new instance of the `CartItem` component and appending it to the `document` body. **After the test**, any mocks are reset, and the component is removed to ensure a clean state for subsequent tests:
 
 ```js
 describe('CartItem', () => {
@@ -84,7 +84,7 @@ describe('CartItem', () => {
 ```
 
 ### Step 3: Testing Property Initialization
-The first test verifies that the component correctly initializes its properties from the constructor arguments.
+The first test verifies that the component correctly initializes its properties from the constructor arguments:
 
 ```js
 test('should create \'CartItem\' element with correct properties', () => {
@@ -112,7 +112,7 @@ test('should render the correct HTML', () => {
 ```
 
 ### Step 5: Testing Interaction
-Further tests simulate user interactions, such as clicking the increase and decrease buttons, and verify the component's response, including updates to the `quantity` and `subtotal`.
+Further tests simulate user interactions, such as clicking the increase and decrease buttons, and verify the component's response, including updates to the `quantity` and `subtotal`:
 
 ```js
 test('should increase the quantity when the increase button is clicked', () => {
@@ -206,7 +206,7 @@ test('should dispatch \'increase-quantity\' event when \'Decrease\' button is cl
 ```
 
 ### Step 7: Testing UI Rendering
-UI rendering testing is utilized to verify whether a CSS class is present or not, based on the `remove` button click and product `quantity`.
+UI rendering testing is utilized to verify whether a CSS class is present or not, based on the `remove` button click and product `quantity`:
 
 ```js
 test('should show button when quantity is greater than zero', () => {
@@ -226,12 +226,11 @@ test('should hide remove button when quantity is equal to zero', () => {
   expect(cartItem.querySelector('.remove').classList).not.toContain('hidden');
 })
 ```
+That's it!. We now have a complete test suite for our `CartItem` Web Component. The results can be seen running the `npm run test:verbose cartItem` command in the terminal:
+![unit testing results](/assets/images/image-post2-unit-testing-results.jpg 'Jest unit testing results')
 
 ## Conclusion
 These tests collectively ensure that the `CartItem` component behaves as expected, providing confidence in its reliability as part of the larger application.
-
-We can see the unit test suite results running the `npm run test:verbose cartItem` command in our terminal:
-![unit testing results](/assets/images/image-post2-unit-testing-results.jpg 'Jest unit testing results')
 
 ---
 

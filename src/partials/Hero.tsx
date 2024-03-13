@@ -11,12 +11,11 @@ const Hero = () => (
       }
       description={
         <>
-          Striving to use <GradientText>tech</GradientText> for good, making the
-          world better for all. Let's code with{' '}
+          Let's work on using <GradientText>tech</GradientText> to make the
+          world a better place for everyone. We'll code with{' '}
           <GradientText>purpose</GradientText>, design with{' '}
-          <GradientText>empathy</GradientText>, and ensure our{' '}
-          <GradientText>innovations</GradientText> leave a valuable{' '}
-          <GradientText>legacy</GradientText> on society.
+          <GradientText>empathy</GradientText>, and make sure our creations
+          leave a valuable <GradientText>legacy</GradientText> on society.
         </>
       }
       avatar={

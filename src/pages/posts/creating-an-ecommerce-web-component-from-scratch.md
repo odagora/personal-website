@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: Creating an Ecommerce Web Component from scratch
-description: ¿How to create a vanilla JavaScript Web Component for an ecommerce?. Let's find out in this one out of three blog posts series.
+description: Learn to build a JavaScript Web Component for e-commerce. Dive into our series. Click to explore!
 pubDate: 2023-12-21T00:00:00Z
 imgSrc: '/assets/images/persona-adding-clothes-closeup.jpg'
 imgAlt: 'ecommerce image'
@@ -24,7 +24,7 @@ Feel free to explore the entire ecommerce codebase by visiting the [GitHub repos
 
 
 ## Step 1: Define the `CartItem` Class
-First, we define the `CartItem` class extending from `HTMLElement`. This class will manage the cart item's data and render its HTML structure.
+First, we define the `CartItem` class extending from `HTMLElement`. This class will manage the cart item's data and render its HTML structure:
 
 ```javascript
 export class CartItem extends HTMLElement {
@@ -54,7 +54,7 @@ export class CartItem extends HTMLElement {
 ```
 
 ## Step 2: Implementing Getters and Setters for internal state
-Next, we implement getters and setters to access and update the internal state of the `CartItem` component. This allows controlled access to the component's data.
+Next, we implement getters and setters to access and update the internal state of the `CartItem` component. This allows controlled access to the component's data:
 
 ```js
 // Getter method to get the value of a property in the state object
@@ -74,7 +74,7 @@ The `render` function manages the HTML structure to append to the selected DOM n
 
 Keep in mind that the `numberToPrice` function could incorporate custom logic for price formatting.
 
-Additionally, we've included a ternary operator to toggle the `hidden` class in the remove button. This allows us to show or hide the button based on the `isRemoveCTAHidden` prop, which is set by default to `true`.
+Additionally, we've included a ternary operator to toggle the `hidden` class in the remove button. This allows us to show or hide the button based on the `isRemoveCTAHidden` prop, which is set by default to `true`:
 
 > For more details on the CSS styles, please check out the codebase by visiting the [GitHub repository](https://github.com/odagora/ecommerce-component).
 
@@ -107,7 +107,7 @@ render() {
 }
 ```
 ## Step 4: Implementing the `increaseQuantity` and `decreaseQuantity` methods
-In this step, we focus on implementing the `increaseQuantity` and `decreaseQuantity` methods within the `CartItem` component. These methods handle the functionality of adjusting the quantity of an item in the cart and updating the `subtotal` accordingly.
+In this step, we focus on implementing the `increaseQuantity` and `decreaseQuantity` methods within the `CartItem` component. These methods handle the functionality of adjusting the quantity of an item in the cart and updating the `subtotal` accordingly:
 
 ```js
 // Private method to increase the quantity and update the subTotal property in the state object.
@@ -148,7 +148,7 @@ In this step, we focus on implementing the `increaseQuantity` and `decreaseQuant
 }
 ```
 ## Step 5: Dispatching custom events in the component
-In this step, we will explore the `removeFromCartEvent` and `quantityChangeEvent` methods in the `CartItem` component, responsible for dispatching custom events related to cart actions.
+In this step, we will explore the `removeFromCartEvent` and `quantityChangeEvent` methods in the `CartItem` component, responsible for dispatching custom events related to cart actions:
 
 **By utilizing these methods to dispatch custom events, the `CartItem` component can communicate changes in item quantities and removal actions effectively within the application, enhancing the overall user experience and functionality.**
 
@@ -189,7 +189,7 @@ In this step, we will explore the `removeFromCartEvent` and `quantityChangeEvent
 ```
 
 ## Step 6: Implementing the `click` event handler
-In this step, we will delve into the `handleButtonClick` method of the `CartItem` component, which manages the actions triggered by clicking on buttons within the cart item.
+In this step, we will delve into the `handleButtonClick` method of the `CartItem` component, which manages the actions triggered by clicking on buttons within the cart item:
 
 ```js
 // Private method to handle click events on the remove,
@@ -221,7 +221,7 @@ In this step, we will delve into the `handleButtonClick` method of the `CartItem
 ## Step 7: Implementing the `connectedCallback` and `disconnectedCallback`
 The `connectedCallback` method is where we render the cart item and attach event listeners. Here, we dynamically create the HTML structure and append it to the DOM.
 
-The `disconnectedCallback` method is where we detach event listeners when the component is removed from the DOM to avoid memory leaks.
+The `disconnectedCallback` method is where we detach event listeners when the component is removed from the DOM to avoid memory leaks:
 
 ```js
 // ConnectedCallback is called when the element is inserted into the DOM
@@ -240,7 +240,7 @@ disconnectedCallback() {
 ```
 
 ## Step 8: Registering the custom element
-Finally, we register the custom element using `window.customElements.define`.
+Finally, we register the custom element using `window.customElements.define`:
 
 ```js
 window.customElements.define('cart-item', CartItem);
@@ -384,7 +384,7 @@ In order to use this component in other apps or directly in the HTML with the cu
 2. Adding the `static get observedAttributes()` method for observing attributes
 3. Adding the `attributeChangedCallback` method for responding to observed attributes changes
 4. Using an html `template` for storing the HTML structure
-5. Adding CSS styling within a <style></style> in a new `getStyles()` method and executing it inside the `template`
+5. Adding CSS styling within a `<style></style>` tag in a new `getStyles()` method and executing it inside the `template`
 6. Appending the custom `template` to the `shadowRoot` for rendering
 
 > For more details, refer to the Web Components [official documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements).
