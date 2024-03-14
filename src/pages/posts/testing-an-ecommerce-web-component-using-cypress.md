@@ -211,6 +211,8 @@ describe('Remove item from cart', () => {
   })
 })
 ```
+That's it!. We now have a complete integration test suite for our `CartItem` Web Component. The results can be seen running the `cypress run --spec 'cypress/e2e/item-in-cart.cy.js'` command in the terminal, where the spec path should be an absolute path or can be relative to the current working directory:
+![integration testing results](/assets/images/image-post3-cypress-results.jpg 'Cypress integration test results')
 
 ### Next Steps: Testing Multiple Items in Cart Interaction
 Testing the functionality of adding and removing multiple items in the `Cart` component is crucial for ensuring the smooth operation of the ecommerce application.
