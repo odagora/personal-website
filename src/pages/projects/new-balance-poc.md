@@ -14,6 +14,8 @@ pubDate: 2023-11-30T00:00:00Z
 
 The New Balance Proof of Concept offers an immersive 3D product personalization experience for e-commerce. With real-time rendering, users can dynamically customize the 3D model by selecting from a range of colors, uploading their own images, and adding predetermined or bespoke text in various font styles to personalize multiple components of the product. This cutting-edge solution provides an engaging and interactive way for customers to tailor products to their unique preferences.
 
+🔗 **Click the following link to view a [live demo](https://storage.googleapis.com/configure_implementations_dev/new-balance/index.html?workflow=dev).**
+
 ## Objectives
 
 1. Build a 3D product personalization experience using cutting-edge technologies.

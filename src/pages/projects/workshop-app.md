@@ -2,7 +2,7 @@
 layout: '@/templates/BaseProject.astro'
 name: Automotive Workshop App
 description: Automotive Workshop Operation Docs Management.
-link: 'https://github.com/odagora/workshop'
+link: 'https://bit.ly/3x7y4Dr'
 imgSrc: '/assets/images/servitalleres-logo.svg'
 imgAlt: 'servitalleres logo'
 coverImgSrc: '/assets/images/servitalleres-cover.jpg'
@@ -14,6 +14,8 @@ pubDate: 2021-05-15T00:00:00Z
 ## Project Overview
 
 The Workshop app is a robust web application meticulously crafted to streamline internal documentation management. With its array of features including creation, editing, reading, updating, and deletion capabilities, the app provides comprehensive asset management tailored for small automotive workshops.
+
+🔗 **Click the following link to view the [demo video](https://bit.ly/3x7y4Dr).**
 
 ## Objectives
 
@@ -54,4 +56,4 @@ The Workshop app is a robust web application meticulously crafted to streamline 
 
 ## Live Website Link
 
-**Due to the nature of the internet business, this app is no longer available online. However, you can explore the public codebase [here](https://github.com/odagora/workshop) and access visual resources [here](https://bit.ly/3I7asBg).**
+**Due to the nature of the internet business, this app is no longer available online. However, you can explore the public codebase [here](https://github.com/odagora/workshop) and view a demo [here](https://bit.ly/3x7y4Dr).**

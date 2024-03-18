@@ -15,6 +15,8 @@ pubDate: 2023-02-10T00:00:00Z
 
 The Umoob landing page is meticulously crafted to exhibit the features of the Umoob App seamlessly. By providing comprehensive app details, both users and businesses can register for app testing.
 
+🔗 **Click the following link to view a [live demo](https://www.umoob.com/).**
+
 ## Objectives
 
 1. Craft a fully-responsive and user-friendly landing page to showcase the Umoob sport marketplace app.
