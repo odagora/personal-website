@@ -14,7 +14,7 @@ const latestPosts = sortedPosts.slice(0, 3);
 
 const allProjects = await Astro.glob<IProjectFrontmatter>('./projects/*.md');
 const sortedProjects = sortByDate(allProjects);
-const latestProjects = sortedProjects.slice(0, 3);
+const latestProjects = sortedProjects.slice(0, 4);
 
 const { title } = AppConfig;
 const { description } = AppConfig;

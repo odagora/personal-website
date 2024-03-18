@@ -49,6 +49,10 @@ export const technologies = {
   Vite: 'Vite',
   WebGL: 'WebGL',
   Zustand: 'Zustand',
+  MUI: 'MUI',
+  'Styled Components': 'Styled Components',
+  Axios: 'Axios',
+  PropTypes: 'PropTypes',
 
   // Backend
   NodeJS: 'NodeJS',
@@ -105,6 +109,10 @@ export const tagsMap: Map<keyof typeof technologies, keyof typeof ColorTags> =
     [technologies.Vite, ColorTags.CYAN],
     [technologies.WebGL, ColorTags.SKY],
     [technologies.Zustand, ColorTags.VIOLET],
+    [technologies.MUI, ColorTags.PURPLE],
+    [technologies['Styled Components'], ColorTags.SKY],
+    [technologies.Axios, ColorTags.PINK],
+    [technologies.PropTypes, ColorTags.GRAY],
     [technologies.NodeJS, ColorTags.RED],
     [technologies.ExpressJS, ColorTags.ORANGE],
     [technologies.Django, ColorTags.YELLOW],
