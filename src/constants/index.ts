@@ -53,6 +53,7 @@ export const technologies = {
   'Styled Components': 'Styled Components',
   Axios: 'Axios',
   PropTypes: 'PropTypes',
+  WordPress: 'WordPress',
 
   // Backend
   NodeJS: 'NodeJS',
@@ -76,6 +77,7 @@ export const technologies = {
   NET: 'NET',
   PHPUnit: 'PHPUnit',
   'Google Sheets API': 'Google Sheets API',
+  MySQL: 'MySQL',
 } as const;
 
 export const tagsMap: Map<keyof typeof technologies, keyof typeof ColorTags> =
@@ -113,6 +115,7 @@ export const tagsMap: Map<keyof typeof technologies, keyof typeof ColorTags> =
     [technologies['Styled Components'], ColorTags.SKY],
     [technologies.Axios, ColorTags.PINK],
     [technologies.PropTypes, ColorTags.GRAY],
+    [technologies.WordPress, ColorTags.EMERALD],
     [technologies.NodeJS, ColorTags.RED],
     [technologies.ExpressJS, ColorTags.ORANGE],
     [technologies.Django, ColorTags.YELLOW],
@@ -134,6 +137,7 @@ export const tagsMap: Map<keyof typeof technologies, keyof typeof ColorTags> =
     [technologies.NET, ColorTags.ORANGE],
     [technologies.PHPUnit, ColorTags.YELLOW],
     [technologies['Google Sheets API'], ColorTags.GREEN],
+    [technologies.MySQL, ColorTags.TEAL],
   ]);
 
 export type Tag = keyof typeof technologies;
