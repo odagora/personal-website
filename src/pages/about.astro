@@ -3,7 +3,10 @@ import { AboutDetails } from '@/partials';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 
-const { title, description } = AppConfig;
+const titleSuffix = ` - ${AppConfig.site_name}`;
+const title = `About me${titleSuffix}`;
+const description =
+  'I am a passionate tech professional with a diverse portfolio and experience building innovative digital solutions. Learn about my background, skills, and vision.';
 ---
 
 <Base head={{ title, description }}>

@@ -1,8 +1,8 @@
 export const AppConfig = {
-  site_name: 'Tech blog | Daniel González',
-  title: 'Tech blog | Daniel González',
+  site_name: 'Personal site | Daniel González',
+  title: 'Personal site | Daniel González',
   description:
-    'Dive into coding insights: JavaScript, TypeScript, React & more. Stay ahead with my tech blog. Read now!',
+    'Explore my tech expertise through an engaging portfolio and insightful blog posts. Learn about innovative projects, latest industry trends, and web development skills.',
   author: 'Daniel González',
   locale_region: 'en-us',
   locale: 'en',
