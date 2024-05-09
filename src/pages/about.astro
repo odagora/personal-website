@@ -7,8 +7,9 @@ const titleSuffix = ` - ${AppConfig.site_name}`;
 const title = `About me${titleSuffix}`;
 const description =
   'I am a passionate tech professional with a diverse portfolio and experience building innovative digital solutions. Learn about my background, skills, and vision.';
+const type = 'website';
 ---
 
-<Base head={{ title, description }}>
+<Base head={{ title, description, type }}>
   <AboutDetails />
 </Base>

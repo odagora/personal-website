@@ -38,9 +38,10 @@ const titleBase = `Blog page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
 const description =
   'Dive into coding insights: JavaScript, TypeScript, React & more. Stay ahead with my tech blog. Read now!';
+const type = 'article';
 ---
 
-<Base head={{ title, description }}>
+<Base head={{ title, description, type }}>
   <Section>
     <PaginationHeader
       title='Blog posts'

@@ -10,9 +10,10 @@ export interface Props {
 
 const { content } = Astro.props as Props;
 const title = `${content.name} - ${AppConfig.site_name}`;
+const type = 'website';
 ---
 
-<Base head={{ title, description: content.description }}>
+<Base head={{ title, description: content.description, type }}>
   <ProjectDetails frontmatter={content}>
     <slot></slot>
   </ProjectDetails>

@@ -18,9 +18,10 @@ const latestProjects = sortedProjects.slice(0, 4);
 
 const { title } = AppConfig;
 const { description } = AppConfig;
+const type = 'website';
 ---
 
-<Base head={{ title, description }}>
+<Base head={{ title, description, type }}>
   <Hero />
   <RecentProjects projects={latestProjects} />
   <RecentPosts postList={latestPosts} />
