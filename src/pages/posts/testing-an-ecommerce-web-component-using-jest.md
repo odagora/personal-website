@@ -3,7 +3,7 @@ layout: '@/templates/BasePost.astro'
 title: Testing an Ecommerce Web Component using Jest
 description: Explore unit testing for JavaScript Web Components with Jest in the second post of our three-part series. Join us now!
 pubDate: 2024-01-15T00:00:00Z
-imgSrc: '/assets/images/quality-control-engineers-illustration.jpg'
+imgSrc: '/assets/images/quality-control-engineers.jpg'
 imgAlt: 'ecommerce image'
 ---
 
