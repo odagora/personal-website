@@ -21,7 +21,9 @@ export default defineConfig({
     react(),
     tailwind({}),
     sitemap(),
-    robotsTxt(),
+    robotsTxt({
+      sitemap: ['https://odagora.com/sitemap.xml'],
+    }),
     astroImageTools,
   ],
 });
